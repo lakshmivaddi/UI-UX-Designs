@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  background-color: white;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.topnav a{
+  float: left;
+  display: block;
+  color: #BF8E8E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+    #logo{
+        width: 370px;
+        height: 100px;
+    }
+    
+     .topnav a.icon{
+        display:none;
+    }
+    
+    @media screen and (max-width: 800px){
+        
+        
+        .topnav a:not(:nth-child(4)){
+            display: none;
+        }
+         .topnav a.icon{
+            display: block;
+           float:right;
+            
+             
+             
+        }
+        
+        
+       
+    }
+    
+        
+</style>
+</head>
+<body>
+
+
+    
+    <div class="topnav" id="myTopnav">
+  <a href="https://www.stephaniesimmons.co/dimplesdecor">Home</a>
+  <a href="https://www.stephaniesimmons.co/dimplesdecor%2Fabout">About</a>
+  <a href="https://www.stephaniesimmons.co/dimplesdecor%2Fservices">Services</a>       
+  <a href="https://www.stephaniesimmons.co/dimplesdecor"><img src="https://photos.smugmug.com/photos/i-6hpNkcV/0/4d737609/XL/i-6hpNkcV-XL.png" alt="Dimples Decor" id="logo"></a>
+  <a href="https://square.site/book/3162FABWZNVRN/dimples-decor" target="_blank">Book Now</a>
+  <a href="https://www.stephaniesimmons.co/dimplesdecor-contact">Contact Us</a>
+  <a href="https://www.stephaniesimmons.co/dimplesdecor%2Ffrequently-asked-questions">FAQ</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  
+</div>
+ 
+     
+    
+    
+
+
+
+<script>
+
+</script>
+
+</body>
+</html>
+
+
+<!--
+javascript: void(0); is used as a placeholder URL to indicate that an onclick event is tied to the link to do the actual action.
+
+If JavaScript is blocked for some reason then this javascript: void(0); link comes into view.-->
+
+<!--
+
+document.getElementById('foo').style.justifyContent = 'flex-start'
+OR:
+
+document.getElementById('foo').style["justify-content"] = 'flex-start'
+-->

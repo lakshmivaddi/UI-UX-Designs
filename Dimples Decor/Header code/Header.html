@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  background-color: white;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.topnav a{
+  float: left;
+  display: block;
+  color: #BF8E8E;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+    .topnav a:nth-child(4){
+        padding-top: 20px;
+    }
+
+.topnav .icon {
+  display: none;
+}
+    
+    
+    
+    #logo{
+        width: 350px;
+        height: 70px;
+    }
+    
+    #myTopnav{
+        font-family: montserrat;
+        font-weight: bold;
+    
+    }
+    
+    
+/*Tablet view*/
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:nth-child(4)) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+      
+  }
+
+    #logo{
+        width: 350px;
+        height: 70px;
+    }
+   
+
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+     .topnav.responsive a:nth-child(4){
+  display: none;
+  }
+    
+}
+    
+/*Mobile*/
+    
+@media screen and (max-width: 500px) {
+  .topnav a:not(:nth-child(4)) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+    #logo{
+        width: 200px;
+        height: 37px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: center;
+  }
+     .topnav.responsive a:nth-child(4){
+  display: none;
+  }
+    
+}
+        
+</style>
+</head>
+<body>
+
+
+    
+    <div class="topnav" id="myTopnav">
+  <a href="https://www.stephaniesimmons.co/dimplesdecor">Home</a>
+  <a href="https://www.stephaniesimmons.co/dimplesdecor%2Fabout">About</a>
+  <a href="https://www.stephaniesimmons.co/dimplesdecor%2Fservices">Services</a>       
+  <a href="https://www.stephaniesimmons.co/dimplesdecor"><img src="https://photos.smugmug.com/photos/i-6hpNkcV/0/4d737609/XL/i-6hpNkcV-XL.png" alt="Dimples Decor" id="logo"></a>
+  <a href="https://square.site/book/3162FABWZNVRN/dimples-decor" target="_blank">Book Now</a>
+  <a href="https://www.stephaniesimmons.co/dimplesdecor-contact">Contact Us</a>
+  <a href="https://www.stephaniesimmons.co/dimplesdecor%2Ffrequently-asked-questions">FAQ</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
+    
+
+
+
+<script>
+function myFunction() {
+document.getElementById("myTopnav").style.display = "block";
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    
+  } else {
+    x.className = "topnav";
+    document.getElementById("myTopnav").style.display = "flex";
+//      document.getElementById('myTopnav').style["justify-content"] = 'flex-start';
+  }
+}
+   
+    
+</script>
+
+</body>
+</html>
+
+
+<!--
+javascript: void(0); is used as a placeholder URL to indicate that an onclick event is tied to the link to do the actual action.
+
+If JavaScript is blocked for some reason then this javascript: void(0); link comes into view.-->
+
+<!--
+
+document.getElementById('foo').style.justifyContent = 'flex-start'
+OR:
+
+document.getElementById('foo').style["justify-content"] = 'flex-start'
+-->
